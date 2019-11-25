@@ -10,6 +10,6 @@ package DAO;
  *
  * @author yarae
  */
-public class Conexao {
+public class Conexao extends ExecuteSQL{
 
 }
