@@ -5,11 +5,33 @@
  */
 
 package DAO;
-
+import java.sql.*;
+import Modelo.Funcionario;
 /**
  *
  * @author yarae
  */
-public class FuncionarioDAO {
-
+public class FuncionarioDAO extends ExecuteSQL {
+    public FuncionarioDAO (Connection con) {
+        super(con);
+    }
+    public boolean Logar(String login, String senha) {
+        boolean finalresult = false;
+        try{
+            String consulta = "select login, senha from funcionario" + "where login = '" + login + "' and senha = '"+ senha +"'";
+            PreparedStatemente ps = getCon() .prepareStatement(consulta);
+            ResultSet rs = psexecuteQuery();
+        
+            if (rs != null) {
+                while (rs.next()) {
+                    Funcionario a = new Funcionario ();
+                    a.setLogin(rs.getString(1));
+                    a.setSenha(rs.getString(2));
+                    finalresult = true;
+                }
+            }
+        } catch (SQLException ex) {
+            ex.getMessage();
+        }
+    }        return finalresult;
 }
