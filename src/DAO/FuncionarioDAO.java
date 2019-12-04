@@ -7,10 +7,8 @@
 package DAO;
 import java.sql.*;
 import Modelo.Funcionario;
-/**
- *
- * @author yarae
- */
+
+
 public class FuncionarioDAO extends ExecuteSQL {
     public FuncionarioDAO (Connection con) {
         super(con);
@@ -19,8 +17,8 @@ public class FuncionarioDAO extends ExecuteSQL {
         boolean finalresult = false;
         try{
             String consulta = "select login, senha from funcionario" + "where login = '" + login + "' and senha = '"+ senha +"'";
-            PreparedStatemente ps = getCon() .prepareStatement(consulta);
-            ResultSet rs = psexecuteQuery();
+            PreparedStatement ps = getCon().prepareStatement(consulta);
+            ResultSet rs = ps.executeQuery();
         
             if (rs != null) {
                 while (rs.next()) {
@@ -33,5 +31,6 @@ public class FuncionarioDAO extends ExecuteSQL {
         } catch (SQLException ex) {
             ex.getMessage();
         }
-    }        return finalresult;
+        return finalresult;
+    }        
 }
