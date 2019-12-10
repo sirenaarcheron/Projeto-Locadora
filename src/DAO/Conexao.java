@@ -5,7 +5,7 @@ import java.sql.*;
 import javax.swing.JOptionPane;
 
 public class Conexao {
-        public static Connection AbrirConexao() throws SQLException {
+        public static Connection AbrirConexao(){
             Connection con = null;
             
            try{

@@ -11,5 +11,5 @@ package AluguelDAO;
  * @author yarae
  */
 public class AluguelDAO {
-
+                
 }
