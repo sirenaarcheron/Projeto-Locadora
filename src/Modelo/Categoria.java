@@ -1,19 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package Modelo;
 
-/**
- *
- * @author yarae
- */
 public class Categoria {
-        private int codigo;
-        private string nome;
 
+//atributos 
+private int codigo;
+private String nome;
+    
+//metodos getters e setters
     public int getCodigo() {
         return codigo;
     }
@@ -22,12 +15,12 @@ public class Categoria {
         this.codigo = codigo;
     }
 
-    public string getNome() {
+    public String getNome() {
         return nome;
     }
 
-    public void setNome(string nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
-        
+
 }

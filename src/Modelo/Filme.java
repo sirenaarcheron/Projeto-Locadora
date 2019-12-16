@@ -1,23 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package Modelo;
 
-/**
- *
- * @author yarae
- */
 public class Filme {
+    
+    //atributos
     private int codigo;
     private String titulo;
     private int ano;
     private String duracao;
     private int cod_categoria;
-    private int cod_classificacao;
+    private int cod_classificao;
     private String capa;
+    
+    //metodos getters e setters
 
     public int getCodigo() {
         return codigo;
@@ -59,12 +53,12 @@ public class Filme {
         this.cod_categoria = cod_categoria;
     }
 
-    public int getCod_classificacao() {
-        return cod_classificacao;
+    public int getCod_classificao() {
+        return cod_classificao;
     }
 
-    public void setCod_classificacao(int cod_classificacao) {
-        this.cod_classificacao = cod_classificacao;
+    public void setCod_classificao(int cod_classificao) {
+        this.cod_classificao = cod_classificao;
     }
 
     public String getCapa() {
@@ -73,6 +67,14 @@ public class Filme {
 
     public void setCapa(String capa) {
         this.capa = capa;
+    }
+
+    public void setCod_classificacao(int aInt) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public int getCod_classificacao() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

@@ -1,21 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package Modelo;
 
-/**
- *
- * @author yarae
- */
 public class DVD {
-        private int codigo;
-        private int cod_filme;
-        private string situacao;
-        private double preco;
-        private string data_compra;
+
+//atributos
+    private int codigo;    
+    private int cod_filme ;
+    private String situacao;
+    private double preco;   
+    private String data_compra;
+
+//metodos getters e setters
 
     public int getCodigo() {
         return codigo;
@@ -33,11 +27,11 @@ public class DVD {
         this.cod_filme = cod_filme;
     }
 
-    public string getSituacao() {
+    public String getSituacao() {
         return situacao;
     }
 
-    public void setSituacao(string situacao) {
+    public void setSituacao(String situacao) {
         this.situacao = situacao;
     }
 
@@ -49,12 +43,12 @@ public class DVD {
         this.preco = preco;
     }
 
-    public string getData_compra() {
+    public String getData_compra() {
         return data_compra;
     }
 
-    public void setData_compra(string data_compra) {
+    public void setData_compra(String data_compra) {
         this.data_compra = data_compra;
     }
-        
+    
 }

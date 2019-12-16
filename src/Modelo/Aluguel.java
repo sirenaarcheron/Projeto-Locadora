@@ -1,22 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 package Modelo;
 
-/**
- *
- * @author yarae
- */
 public class Aluguel {
+    //Atributos
     private int cod;
     private int coddvd;
     private int codcliente;
     private String data_aluguel;
     private String horario;
     private String data_devolucao;
+    
+    //metodos getters e setters
 
     public int getCod() {
         return cod;
@@ -65,4 +59,5 @@ public class Aluguel {
     public void setData_devolucao(String data_devolucao) {
         this.data_devolucao = data_devolucao;
     }
+    
 }

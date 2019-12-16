@@ -1,12 +1,14 @@
 package Modelo;
 
 public class Funcionario {
-    
-   private int cod;
-   private String nome;
-   private String login;
-   private String senha;
 
+//atributos    
+private int cod;
+private String nome;
+private String login;
+private String senha;
+
+//metodos getters e setters
     public int getCod() {
         return cod;
     }
@@ -38,5 +40,6 @@ public class Funcionario {
     public void setSenha(String senha) {
         this.senha = senha;
     }
-       
+  
+
 }
